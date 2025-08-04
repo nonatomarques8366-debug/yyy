@@ -170,7 +170,6 @@ const LandingPage = () => {
                   <div className="bg-gradient-to-b from-red-600/20 to-red-800/20 p-4 rounded-2xl border border-red-500/30 backdrop-blur-sm overflow-hidden">
                     <div className="relative">
                       <img 
-                        src="https://customer-assets.emergentagent.com/job_mdmbreaker/artifacts/24lzrm14_IMG_20250803_134918_666.jpg"
                         alt="Locked Android Device with MDM"
                         className="w-full h-48 object-cover rounded-lg shadow-lg"
                       />
@@ -189,7 +188,6 @@ const LandingPage = () => {
                   <div className="bg-gradient-to-b from-green-600/20 to-emerald-800/20 p-4 rounded-2xl border border-green-500/30 backdrop-blur-sm overflow-hidden">
                     <div className="relative">
                       <img 
-                        src="https://customer-assets.emergentagent.com/job_mdmbreaker/artifacts/jnal54e7_IMG_20250803_134921_876.jpg"
                         alt="Unlocked Android Device Home Screen"
                         className="w-full h-48 object-cover rounded-lg shadow-lg"
                       />
@@ -401,69 +399,9 @@ const LandingPage = () => {
       </section>
 
       {/* Tech Footer */}
-      <footer className="bg-black text-white py-16 lg:py-20 px-4 sm:px-6 lg:px-8 border-t border-cyan-500/20">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
-            {/* Company Info */}
-            <div className="lg:col-span-1">
-              <div className="flex items-center space-x-3 mb-6">
-                <div className="relative w-12 h-12 bg-gradient-to-r from-cyan-500 via-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
-                  <Code className="h-7 w-7 text-white" />
-                  <div className="absolute -top-1 -right-1 w-3 h-3 bg-green-400 rounded-full animate-pulse"></div>
-                </div>
-                <div>
-                  <span className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
-                    {mockData.company.name}
-                  </span>
-                  <div className="text-xs text-cyan-300 font-mono">ANDROID_UNLOCK_PRO</div>
-                </div>
-              </div>
-              <p className="text-gray-400 leading-relaxed mb-8">
-                Professional Android MDM removal specialists. Advanced remote unlocking technology 
-                for PayJoy, Soundi, M-Kopa, and all enterprise mobile management systems.
-              </p>
-              <div className="flex items-center space-x-2 text-green-400">
-                <MessageSquare className="w-5 h-5" />
-                <span className="font-mono font-semibold">{mockData.company.whatsapp}</span>
-              </div>
-            </div>
-            
-            {/* Supported Brands */}
-            <div>
-              <h3 className="text-xl font-bold mb-6 text-cyan-300">Supported Brands</h3>
-              <div className="space-y-3">
-                {mockData.supportedBrands.map((brand, index) => (
-                  <div key={index} className="flex items-center space-x-3">
-                    <CheckCircle className="w-4 h-4 text-green-400 flex-shrink-0" />
-                    <span className="text-gray-300 text-sm">{brand}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Technical Specs */}
-            <div>
-              <h3 className="text-xl font-bold mb-6 text-purple-300">Technical Specifications</h3>
-              <div className="space-y-3">
-                {mockData.technicalSpecs.map((spec, index) => (
-                  <div key={index} className="flex items-start space-x-3">
-                    <div className="w-1.5 h-1.5 bg-purple-400 rounded-full mt-2 flex-shrink-0"></div>
-                    <span className="text-gray-400 text-sm leading-relaxed">{spec}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-          
-          <div className="border-t border-gray-800 mt-12 pt-8">
-            <div className="text-center">
-              <p className="text-gray-500 font-mono text-sm">
-                © 2024 {mockData.company.name} | PROFESSIONAL_MDM_REMOVAL_SERVICE.EXE | All rights reserved
-              </p>
-            </div>
-          </div>
-        </div>
-      </footer>
+      <footer className="text-center text-xs text-gray-500 py-4">
+  &copy; 2025 shyyxn solucions. Todos os direitos reservados.
+</footer>
     </div>
   );
 };
