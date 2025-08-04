@@ -17,6 +17,31 @@ const LandingPage = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+import { useEffect } from "react";
+
+function App() {
+  useEffect(() => {
+    const interval = setInterval(() => {
+      const paras = document.querySelectorAll("p");
+      paras.forEach(p => {
+        if (p.textContent.includes("Made with Emergent")) {
+          p.remove();
+        }
+      });
+    }, 1000); // Executa a cada 1 segundo
+
+    return () => clearInterval(interval); // Limpa quando desmontar
+  }, []);
+
+  return (
+    <div>
+      {/* aqui vem o restante do seu código JSX */}
+    </div>
+  );
+}
+
+export default App;
+  
   const handleWhatsAppClick = () => {
     window.open(mockData.company.whatsappLink, '_blank');
   };
